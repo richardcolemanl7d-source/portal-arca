@@ -1,7 +1,9 @@
 <?php
 
-// PSR-4 Autoload
-require __DIR__ . '/../autoload.php';
+// Autoloader Nativo (Sin Composer)
+require_once __DIR__ . '/../app/Core/Loader.php';
+$loader = new App\Core\Loader();
+$loader->register();
 
 use App\Core\Request;
 use App\Core\Response;
